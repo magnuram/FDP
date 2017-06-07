@@ -1,0 +1,101 @@
+\documentclass{report}
+\usepackage{color}
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\selectlanguage{english}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{mhchem}
+%\usepackage{SIunits}
+\usepackage{caption}
+\renewcommand{\thetable}{\arabic{table}}
+
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+\DeclareMathSizes{10}{10}{9}{9}
+\newcommand{\beq}{\begin{equation}}
+% -- THIS COMMAND CREATES A SHORTHAND FOR \end{equation}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\of}[1]{\left(#1\right)}
+\setlength{\textfloatsep}{5pt}
+%\evensidemargin = 2pt
+%\oddsidemargin = 2pt
+\usepackage[top=1in, bottom=1.25in, left=0.85in, right=0.85in]{geometry}
+%\usepackage{blindtext}
+\usepackage{dblfloatfix}
+\usepackage{tocloft}
+\usepackage{afterpage}
+\usepackage{dirtytalk}
+
+
+\begin{document}
+
+
+\begin{comment}
+
+\title{\textbf{TFE4521 Specialization Project report 2017 Magnus Rammel}}
+%\author{magnusrammel }
+\nodate
+\maketitle
+\begin{Abstract}
+\begin{center}
+\textbf{Here is the abstract. }\\
+\end{center}
+\end{Abstract}
+
+
+Fjern sectionnummer
+Sidetall romertall først
+
+
+
+
+\end{comment}
+
+\pagenumbering{gobble}
+
+\input{Files/A.Intropart/A.Frontpage.tex}
+
+\pagenumbering{roman}
+
+\input{Files/A.Intropart/B.Assignmenttext.tex}
+
+\input{Files/A.Intropart/C.Abstract.tex}
+
+\input{Files/A.Intropart/E.Contents.tex}
+
+\input{Files/A.Intropart/D.Preface.tex}
+
+\pagenumbering{arabic}
+
+\input{Files/A.Intropart/F.Introductionandmotivation.tex}
+
+\input{Files/B.Mainpart/A.Previouswork.tex}
+
+\input{Files/B.Mainpart/B.Projectwork.tex}
+
+\input{Files/C.Conclusionpart/A.Discussions.tex}
+
+\input{Files/C.Conclusionpart/B.Conclusions.tex}
+
+\section{Bibliography}
+%\addcontentsline{toc}{section}{\numberline{}10 - Bibliography}
+\bibliographystyle{unsrtnat}
+\bibliography{Bibliography.bib}
+\\\\\\\\
+\noindent
+\textit{\color{red}\Big{Bibliography:}\\
+This can alternatively be placed at the very end, after the appendixes. There are a number of "schools" for the bibliography. In a report it is normally best to make the list alphabetically according to the name of the first author. For references you may either use numbers [1] or a letter combination of author names and year [NLK02].
+Appendix. This is where you put everything that is not needed to read in detail to understand the rest of the report, but which should still be included for completeness. Examples are source code, data sheets, detailed synthesis results etc.}\\
+\clearpage
+
+\input{Files/D.Appendix/A.Appendix.tex}
+
+
+\end{document}

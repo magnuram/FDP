@@ -1,0 +1,48 @@
+\afterpage{%/////begin afterpage/////
+\newgeometry{top=0.5in, bottom=1.25in, left=0.85in, right=0.85in}
+
+
+
+
+\section*{}
+\addcontentsline{toc}{section}{\numberline{}Contents} %til listekomponenten
+
+\renewcommand*\contentsname{Contents}%til overskrift på lista
+\tableofcontents
+
+\noindent
+\textit{\color{red}\Big{Contents:}\\
+This is the list of chapters and sub-chapter, including the page they start on. It is also often normal to include a list of figures, a list of tables, and a list with explanations of abbreviations, if you use a lot of them.}\\
+\clearpage
+
+
+
+
+
+\restoregeometry
+}%/////end afterpage/////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+% ... some material
+\afterpage{%
+\newgeometry{<options>}
+% material for this page
+\clearpage
+\restoregeometry
+} % end of \afterpage{...} material
+% ... still more material
+\end{comment}
